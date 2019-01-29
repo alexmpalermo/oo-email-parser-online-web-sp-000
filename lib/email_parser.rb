@@ -8,9 +8,8 @@ class EmailParser
   end 
   
   def parse 
-    array = []
-    array << @emails
-    array.uniq 
+    @emails.uniq
+    
   
 end 
   
