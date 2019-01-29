@@ -9,7 +9,7 @@ class EmailParser
   
   def parse 
     array = []
-    array << @emails.join(" " || ", ")
+    array << @emails.split(" " || ", ")
     array.uniq 
   
 end 
