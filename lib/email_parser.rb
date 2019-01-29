@@ -10,7 +10,7 @@ class EmailParser
   def parse 
     array = []
     array << @emails.join(" " || ", ")
-  if array.include?()
+  array.remove(|x| x == x)
   
   
   
