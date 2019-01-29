@@ -2,13 +2,14 @@ class EmailParser
   attr_accessor :emails
   
   def initialize(emails)
-     emails.delete(",")
-    @emails = emails.split(" ")
+     
+    @emails = emails.delete(",")
     
   end 
   
   def parse 
-    @emails.uniq
+    @emails.split(" ").uniq 
+    
     
   
 end 
