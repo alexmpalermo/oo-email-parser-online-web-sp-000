@@ -2,7 +2,7 @@ class EmailParser
   attr_accessor :emails
   
   def initialize(emails)
-     emails.remove(",")
+     emails.delete(",")
     @emails = emails.split(" ")
     
   end 
